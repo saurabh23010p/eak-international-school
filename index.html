@@ -112,18 +112,16 @@
       transform: translateY(-2px);
     }
 
-  .hero {
-  background: linear-gradient(120deg, #10264b, #1d4775);
-  color: white;
-  padding: 82px 7%;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 50px;
-  align-items: center;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 100%;
-}
+    .hero {
+      background: linear-gradient(120deg, #10264b, #1d4775);
+      color: white;
+      padding: 82px 7%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+      overflow: hidden;
+    }
 
     .eyebrow {
       color: #e9b44c;
@@ -412,25 +410,16 @@
       text-align: center;
     }
 
-   
-@media (max-width: 900px) {
-    .navbar {
+    @media (max-width: 900px) {
+      .navbar {
         align-items: flex-start;
         flex-direction: column;
-        gap: 16px;
-    }
+      }
 
-    .nav-links {
-        display: flex;
+      .nav-links {
         flex-wrap: wrap;
-        gap: 10px 14px;
-        width: 100%;
-    }
-
-    .nav-links a {
-        font-size: 14px;
-    }
-}
+        gap: 14px;
+      }
 
       .hero {
         grid-template-columns: 1fr;
@@ -448,7 +437,7 @@
       .about {
         grid-template-columns: 1fr;
       }
-    
+    }
 
     @media (max-width: 560px) {
       .topbar {
@@ -656,8 +645,9 @@ img {
         </div>
       </div>
 
+<img src="images/school-campus.jpg" alt="School campus" class="campus-photo">
 
-     <div class="hero-art">
+      <div class="hero-art">
         <div class="art-card">
           <strong>A brighter future starts here.</strong>
           <p>Learn with purpose. Grow with confidence. Lead with kindness.</p>
