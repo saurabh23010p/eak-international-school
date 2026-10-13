@@ -112,16 +112,18 @@
       transform: translateY(-2px);
     }
 
-    .hero {
-      background: linear-gradient(120deg, #10264b, #1d4775);
-      color: white;
-      padding: 82px 7%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-      overflow: hidden;
-    }
+  .hero {
+  background: linear-gradient(120deg, #10264b, #1d4775);
+  color: white;
+  padding: 82px 7%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 50px;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
 
     .eyebrow {
       color: #e9b44c;
@@ -654,9 +656,8 @@ img {
         </div>
       </div>
 
-<img src="images/school-campus.jpg" alt="School campus" class="campus-photo">
 
-      <div class="hero-art">
+     <div class="hero-art">
         <div class="art-card">
           <strong>A brighter future starts here.</strong>
           <p>Learn with purpose. Grow with confidence. Lead with kindness.</p>
