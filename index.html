@@ -410,16 +410,25 @@
       text-align: center;
     }
 
-    @media (max-width: 900px) {
-      .navbar {
+   
+@media (max-width: 900px) {
+    .navbar {
         align-items: flex-start;
         flex-direction: column;
-      }
+        gap: 16px;
+    }
 
-      .nav-links {
+    .nav-links {
+        display: flex;
         flex-wrap: wrap;
-        gap: 14px;
-      }
+        gap: 10px 14px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
 
       .hero {
         grid-template-columns: 1fr;
@@ -437,7 +446,7 @@
       .about {
         grid-template-columns: 1fr;
       }
-    }
+    
 
     @media (max-width: 560px) {
       .topbar {
