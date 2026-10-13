@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the learning approach, academic stages and student development opportunities at EAK International School.">
+  <title>Academics | EAK International School</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #183047;
+      background: #f7f9fc;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #174f79;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #d9a638;
+      outline-offset: 4px;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      box-shadow: 0 2px 12px #10203012;
+    }
+
+    .brand {
+      font-weight: 800;
+      color: #173e63;
+      font-size: 17px;
+      letter-spacing: 0.3px;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav a {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    nav a:hover,
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: #173e63;
+      color: #ffffff;
+      padding: 72px 7%;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: #a87518;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .hero .eyebrow {
+      color: #f4c66a;
+    }
+
+    h1 {
+      font-size: clamp(36px, 5vw, 56px);
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin: 12px 0 20px;
+    }
+
+    h2 {
+      font-size: clamp(25px, 3vw, 32px);
+      line-height: 1.3;
+      margin: 8px 0 14px;
+    }
+
+    h3 {
+      line-height: 1.35;
+    }
+
+    .hero p {
+      max-width: 680px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #e7b957;
+      color: #17334c;
+      padding: 12px 20px;
+      border-radius: 7px;
+      font-weight: 700;
+      margin-top: 12px;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      background: #f2ca70;
+      transform: translateY(-2px);
+    }
+
+    main {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .intro {
+      max-width: 780px;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 26px;
+      border-radius: 14px;
+      border: 1px solid #e3eaf1;
+      box-shadow: 0 8px 24px #10203008;
+      height: 100%;
+    }
+
+    .number {
+      color: #a87518;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .card h3 {
+      margin: 8px 0;
+      font-size: 20px;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .band {
+      background: #eaf1f7;
+      padding: 32px;
+      border-radius: 14px;
+      margin-top: 34px;
+    }
+
+    .extra-space {
+      margin-top: 44px;
+    }
+
+    .band .button + .button {
+      margin-left: 8px;
+    }
+
+    footer {
+      background: #102d47;
+      color: #ffffff;
+      padding: 30px 7%;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #f4d58e;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin: 12px 0;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: #d5e0e9;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        align-items: flex-start;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      .brand {
+        font-size: 15px;
+      }
+
+      nav {
+        width: 100%;
+        gap: 10px 14px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 48px 6%;
+      }
+
+      h1 {
+        font-size: clamp(32px, 9vw, 44px);
+        overflow-wrap: break-word;
+      }
+
+      main {
+        padding: 32px 18px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      .band {
+        padding: 24px 20px;
+      }
+
+      .extra-space {
+        margin-top: 34px;
+      }
+
+      .band .button + .button {
+        margin-left: 0;
+      }
+
+      footer {
+        padding: 26px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="index.html">EAK INTERNATIONAL SCHOOL</a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html" aria-current="page">Academics</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="events.html">Events &amp; Notices</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Learning with purpose</p>
+      <h1>Academics that build<br>bright futures.</h1>
+      <p>
+        We aim to nurture curiosity, strengthen understanding and help
+        every learner grow with confidence, responsibility and creativity.
+      </p>
+      <a class="button" href="admissions.html">Explore Admissions ↗</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">Our learning approach</p>
+      <h2>Strong foundations. Meaningful learning.</h2>
+      <p>
+        Our academic approach combines classroom learning, practical
+        exploration and opportunities to develop communication, teamwork
+        and independent thinking.
+      </p>
+    </section>
+
+    <section class="grid" aria-label="Academic stages">
+      <article class="card">
+        <p class="number">01 / FOUNDATIONS</p>
+        <h3>Early Years</h3>
+        <p>
+          Learning through stories, play, discovery and activities that
+          encourage language, creativity and social development.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="number">02 / DEVELOPMENT</p>
+        <h3>Primary School</h3>
+        <p>
+          Building confidence in reading, writing, mathematics,
+          environmental awareness and problem-solving.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="number">03 / PROGRESSION</p>
+        <h3>Middle &amp; Senior Years</h3>
+        <p>
+          Developing deeper subject knowledge, critical thinking,
+          independent study habits and preparation for future pathways.
+        </p>
+      </article>
+    </section>
+
+    <section class="band">
+      <p class="eyebrow">How we teach</p>
+      <h2>Beyond memorising facts</h2>
+      <p>
+        Discussion, projects, practical activities, reading and collaborative
+        tasks can help students connect classroom concepts with real-life
+        situations.
+      </p>
+    </section>
+
+    <section class="intro extra-space">
+      <p class="eyebrow">Learning beyond lessons</p>
+      <h2>Room to discover new interests</h2>
+      <p>
+        Creative arts, sports, clubs, presentations and group activities
+        support confidence, teamwork, discipline and personal growth
+        alongside academic learning.
+      </p>
+    </section>
+
+    <section class="band">
+      <h2>Every learner deserves an opportunity to grow.</h2>
+      <p>
+        Learn more about joining our school community and the admissions
+        process.
+      </p>
+      <a class="button" href="admissions.html">View Admissions Process ↗</a>
+      <a class="button" href="facilities.html">Explore Facilities ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <strong>EAK International School</strong>
+    <p>Learning today. Leading tomorrow.</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="events.html">Events &amp; Notices</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <p class="footer-note">
+      School details, academic stages and policies should be confirmed
+      before publication.
+    </p>
+  </footer>
+</body>
+</html>

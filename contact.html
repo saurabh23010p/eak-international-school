@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact EAK International School for admissions, school information and enquiries.">
+  <title>Contact Us | EAK International School</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #172b4d;
+      background: #f7f9fc;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 7%;
+      background: #ffffff;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: #173f7a;
+      color: #ffffff;
+      font-size: 23px;
+    }
+
+    .brand-name small {
+      display: block;
+      color: #d19a35;
+      font-size: 10px;
+      letter-spacing: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: #d19a35;
+    }
+
+    .nav-links .apply-button {
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #173f7a;
+      color: white;
+    }
+
+    .hero {
+      padding: 76px 7%;
+      color: white;
+      background: linear-gradient(120deg, #153866, #2863a0);
+    }
+
+    .eyebrow {
+      margin-bottom: 12px;
+      color: #f3c76b;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 700px;
+      margin-bottom: 16px;
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      max-width: 620px;
+      color: #e1eaf7;
+      font-size: 16px;
+    }
+
+    .page-content {
+      width: 86%;
+      max-width: 1150px;
+      margin: 60px auto;
+    }
+
+    .section-heading {
+      margin-bottom: 12px;
+      color: #173f7a;
+      font-size: clamp(25px, 3vw, 34px);
+    }
+
+    .section-intro {
+      margin-bottom: 28px;
+      color: #66758b;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .info-panel,
+    .form-panel {
+      padding: 30px;
+      border: 1px solid #e7ebf2;
+      border-radius: 18px;
+      background: white;
+      box-shadow: 0 8px 30px rgba(26, 54, 93, 0.05);
+    }
+
+    .info-panel h2,
+    .form-panel h2 {
+      margin-bottom: 12px;
+      color: #173f7a;
+      font-size: 22px;
+    }
+
+    .info-panel > p {
+      margin-bottom: 24px;
+      color: #66758b;
+    }
+
+    .info-item {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid #e9edf3;
+    }
+
+    .info-item h3 {
+      margin-bottom: 5px;
+      color: #173f7a;
+      font-size: 15px;
+    }
+
+    .info-item p,
+    .info-item a {
+      color: #66758b;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .form-panel > p {
+      margin-bottom: 22px;
+      color: #66758b;
+      font-size: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      color: #263b58;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #dce3ed;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #172b4d;
+      font: inherit;
+      font-size: 14px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 2px solid #c6d9f5;
+      border-color: #2863a0;
+    }
+
+    textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .submit-button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background: #173f7a;
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background: #245b9c;
+    }
+
+    .form-note {
+      margin-top: 12px;
+      color: #7a8799;
+      font-size: 12px;
+    }
+
+    .visit-section {
+      margin-top: 55px;
+      padding: 30px;
+      border-radius: 16px;
+      background: #eaf1fa;
+    }
+
+    .visit-section h2 {
+      margin-bottom: 10px;
+      color: #173f7a;
+    }
+
+    .visit-section p {
+      color: #52647d;
+    }
+
+    .footer {
+      margin-top: 60px;
+      padding: 30px 7%;
+      background: #112b4c;
+      color: #e4ebf5;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .footer p + p {
+      margin-top: 8px;
+      color: #b9c8dc;
+    }
+
+    @media (max-width: 850px) {
+      .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+        gap: 14px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .navbar {
+        padding: 16px 5%;
+      }
+
+      .nav-links {
+        gap: 12px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 55px 6%;
+      }
+
+      .page-content {
+        width: 90%;
+        margin: 40px auto;
+      }
+
+      .info-panel,
+      .form-panel {
+        padding: 22px;
+      }
+
+      .visit-section {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">E</div>
+      <div class="brand-name">
+        EAK INTERNATIONAL
+        <small>SCHOOL</small>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="events.html">Events &amp; Notices</a>
+      <a href="contact.html">Contact</a>
+      <a class="apply-button" href="admissions.html">Apply Now ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">We are here to help</p>
+      <h1>Let's Start a Conversation</h1>
+      <p>
+        Have questions about admissions, academics or school life?
+        Reach out to our team. We will be happy to guide you.
+      </p>
+    </section>
+
+    <section class="page-content">
+      <h2 class="section-heading">Get in Touch</h2>
+      <p class="section-intro">
+        Contact us for school enquiries, admission information and campus visits.
+      </p>
+
+      <div class="contact-grid">
+        <section class="info-panel">
+          <h2>Contact Information</h2>
+          <p>
+            We welcome enquiries from parents, students and visitors.
+            Our team is here to help you learn more about EAK International School.
+          </p>
+
+          <div class="info-item">
+            <h3>School Address</h3>
+            <p>EAK International School<br>School Campus, New Delhi, India</p>
+          </div>
+
+          <div class="info-item">
+            <h3>Phone</h3>
+            <p>+91 XXXXX XXXXX</p>
+          </div>
+
+          <div class="info-item">
+            <h3>Email</h3>
+            <p>info@example.com</p>
+          </div>
+
+          <div class="info-item">
+            <h3>Office Hours</h3>
+            <p>Monday – Saturday<br>9:00 AM – 4:00 PM</p>
+          </div>
+        </section>
+
+        <section class="form-panel">
+          <h2>Send an Enquiry</h2>
+          <p>Fill in the details below to tell us how we can help.</p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="full-name">Your Name</label>
+              <input type="text" id="full-name" name="full-name"
+                placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email"
+                placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone"
+                placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Enquiry Type</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select an enquiry type</option>
+                <option value="admissions">Admissions</option>
+                <option value="academics">Academics</option>
+                <option value="campus-visit">Campus Visit</option>
+                <option value="general">General Enquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message"
+                placeholder="Write your question here..." required></textarea>
+            </div>
+
+            <button class="submit-button" type="submit">Submit Enquiry ↗</button>
+
+            <p class="form-note">
+              Demo form for this website project. Messages are not sent or stored.
+            </p>
+          </form>
+        </section>
+      </div>
+
+      <section class="visit-section">
+        <h2>Planning a Campus Visit?</h2>
+        <p>
+          We would love to welcome you to our campus. Please contact the school
+          office to confirm visiting hours and arrange a convenient time.
+        </p>
+      </section>
+    </section>
+  
+
+</main>
+
+  <footer class="footer">
+    <p><strong>EAK International School</strong></p>
+    <p>Learning Today. Leading Tomorrow.</p>
+    <p>© 2026 EAK International School. Website project demonstration.</p>
+  </footer>
+
+  <script>
+    const contactForm = document.getElementById("contact-form");
+
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      alert("Thank you for your enquiry! This is a demo form, so your message has not been sent.");
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>
+```

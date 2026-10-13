@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions | EAK International School</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #17243b;
+      background: #f7f9fc;
+      line-height: 1.6;
+    }
+    header {
+      background: #10284b;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .brand { color: white; text-decoration: none; font-weight: bold; }
+    nav { display: flex; flex-wrap: wrap; gap: 16px; }
+    nav a { color: white; text-decoration: none; font-size: 14px; }
+    nav a:hover { color: #ffd27a; }
+    .hero {
+      background: #e8f0fc;
+      padding: 65px 7%;
+      text-align: center;
+    }
+    .hero small { color: #b06a16; font-weight: bold; letter-spacing: 2px; }
+    h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.2; }
+    .hero p { max-width: 650px; margin: 16px auto 25px; }
+    .button {
+      display: inline-block;
+      background: #e8a23a;
+      color: #17243b;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main { max-width: 1100px; margin: auto; padding: 35px 20px 60px; }
+    section { margin: 35px 0; }
+    h2 { font-size: 28px; margin-bottom: 10px; }
+    .muted { color: #596579; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 5px 18px #10284b0b;
+    }
+    .number { color: #b06a16; font-weight: bold; font-size: 14px; }
+    li { margin: 8px 0; }
+    details {
+      background: white;
+      padding: 16px 20px;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      margin: 10px 0;
+    }
+    summary { cursor: pointer; font-weight: bold; }
+    .notice {
+      background: #fff5df;
+      border-radius: 12px;
+      padding: 18px;
+      border-left: 4px solid #e8a23a;
+    }
+    footer {
+      background: #10284b;
+      color: white;
+      text-align: center;
+      padding: 28px 18px;
+    }
+    footer a { color: #ffd27a; }
+    @media (max-width: 700px) {
+      header { align-items: flex-start; }
+      nav { gap: 12px; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 45px 20px; }
+      main { padding: 25px 16px 45px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">EAK INTERNATIONAL SCHOOL</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="index.html#academics">Academics</a>
+      <a href="index.html#facilities">Facilities</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <small>YOUR CHILD'S NEXT CHAPTER</small>
+    <h1>Admissions at EAK</h1>
+    <p>Every child's journey is different. We welcome families who want a supportive environment for learning, discovery and personal growth.</p>
+    <a class="button" href="#enquiry">Start an Enquiry ↗</a>
+  </div>
+
+  <main>
+    <section>
+      <h2>A simple admission process</h2>
+      <p class="muted">Our sample five-step process helps families understand what to expect.</p>
+      <div class="grid">
+        <article class="card"><div class="number">STEP 01</div><h3>Enquiry</h3><p>Learn about the school, available grades and admission requirements.</p></article>
+        <article class="card"><div class="number">STEP 02</div><h3>Application</h3><p>Complete the application and prepare the required documents.</p></article>
+        <article class="card"><div class="number">STEP 03</div><h3>Interaction / Assessment</h3><p>Attend an age-appropriate interaction or assessment, where applicable.</p></article>
+        <article class="card"><div class="number">STEP 04</div><h3>Selection</h3><p>The school reviews the application and communicates the next steps.</p></article>
+        <article class="card"><div class="number">STEP 05</div><h3>Enrolment</h3><p>Complete the remaining formalities after confirmation from the school.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Eligibility and grade placement</h2>
+      <div class="card">
+        <p>Admission depends on the grade applied for, the child's age and the school's admission policy.</p>
+        <ul>
+          <li>Parents should confirm the age criteria for the requested grade.</li>
+          <li>Previous school records may be needed for higher classes.</li>
+          <li>Admission is subject to eligibility and seat availability.</li>
+        </ul>
+        <p class="muted">This is a website prototype. Please confirm actual eligibility rules with the school.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Documents to prepare</h2>
+      <div class="grid">
+        <article class="card"><h3>Student records</h3><p>Birth certificate and recent photographs, if required.</p></article>
+        <article class="card"><h3>Academic records</h3><p>Previous report card and transfer certificate, where applicable.</p></article>
+        <article class="card"><h3>Parent / Guardian details</h3><p>Contact information and address proof, as requested by the school.</p></article>
+      </div>
+      <p class="muted">The final document list should be confirmed with the school office.</p>
+    </section>
+
+    <section>
+      <h2>Important dates</h2>
+      <div class="notice">
+        <strong>Admission enquiries are welcome.</strong>
+        <p>Contact the school office to confirm application dates, assessment schedules and seat availability. Exact dates have not been published in this prototype.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <details>
+        <summary>How do I begin the admission process?</summary>
+        <p>Start with an enquiry, confirm grade eligibility and follow the application instructions shared by the school.</p>
+      </details>
+      <details>
+        <summary>Which documents should I bring?</summary>
+        <p>Prepare student identity and academic records as applicable. Confirm the final list with the school office.</p>
+      </details>
+      <details>
+        <summary>Is an assessment required?</summary>
+        <p>Requirements may vary by grade. The school will explain the applicable process during the enquiry.</p>
+      </details>
+      <details>
+        <summary>Can I submit an enquiry online?</summary>
+        <p>This demonstration page does not send information to a server. Use the school's verified contact details for a real enquiry.</p>
+      </details>
+    </section>
+
+    <section id="enquiry">
+      <div class="card">
+        <h2>Take the next step</h2>
+        <p>We look forward to helping your family explore EAK International School.</p>
+        <a class="button" href="index.html#contact">Contact the School</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>EAK International School</strong>
+    <p>Inspiring young minds. Building bright futures.</p>
+    <a href="index.html">Home</a> ·
+    <a href="about.html">About Us</a> ·
+    <a href="index.html#contact">Contact</a>
+    <p><small>Sample website content for a frontend assignment.</small></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facilities | EAK International School</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #183047;
+      background: #f7f9fc;
+    }
+
+    header {
+      background: white;
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      box-shadow: 0 2px 12px #10203012;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 17px;
+      color: #173e63;
+    }
+
+    nav {
+      display: flex;
+      gap: 17px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #174f79;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 65px 7%;
+      color: white;
+      background: #173e63;
+    }
+
+    .eyebrow {
+      color: #e8bd62;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.15;
+      margin: 15px 0;
+    }
+
+    .hero p { max-width: 680px; }
+
+    main {
+      max-width: 1120px;
+      margin: auto;
+      padding: 42px 22px;
+    }
+
+    .intro { max-width: 760px; margin-bottom: 30px; }
+
+    h2 { font-size: 28px; line-height: 1.3; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border: 1px solid #e3eaf1;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px #10203008;
+    }
+
+    .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 { margin: 5px 0 8px; }
+
+    .band {
+      margin-top: 32px;
+      padding: 30px;
+      border-radius: 14px;
+      background: #eaf1f7;
+    }
+
+    .button {
+      display: inline-block;
+      background: #e7b957;
+      color: #17334c;
+      padding: 12px 20px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    footer {
+      background: #102d47;
+      color: white;
+      padding: 28px 7%;
+      margin-top: 20px;
+    }
+
+    footer a { color: #f4d58e; text-decoration: none; }
+
+    @media (max-width: 700px) {
+      header { align-items: flex-start; }
+      nav { gap: 12px; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 45px 7%; }
+      main { padding: 30px 18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="index.html">EAK INTERNATIONAL SCHOOL</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">Our campus experience</p>
+    <h1>A space to learn,<br>explore and grow.</h1>
+    <p>A supportive learning environment gives students opportunities to explore ideas, discover interests and develop skills beyond the classroom.</p>
+    <a class="button" href="academics.html">Explore Academics ↗</a>
+  </section>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">Learning environment</p>
+      <h2>Designed to support every learner</h2>
+      <p>Explore the facilities that can support academic learning, creativity, physical development and student wellbeing. The facilities listed below are illustrative and should be confirmed against the school's actual campus.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="icon">📚</div>
+        <h3>Library & Reading</h3>
+        <p>A reading-focused environment that encourages curiosity, independent learning and a lifelong interest in books.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🔬</div>
+        <h3>Science Laboratories</h3>
+        <p>Practical exploration can help students connect scientific concepts with observation, experiments and discovery.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">💻</div>
+        <h3>Computer Learning</h3>
+        <p>Digital learning activities can build technology awareness, research skills and responsible computer use.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">⚽</div>
+        <h3>Sports & Recreation</h3>
+        <p>Physical activities encourage teamwork, discipline, healthy habits and confidence through participation.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🎨</div>
+        <h3>Arts & Creativity</h3>
+        <p>Creative activities give students opportunities to express ideas, experiment with new skills and appreciate the arts.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🌿</div>
+        <h3>Student Wellbeing</h3>
+        <p>A welcoming campus culture should support respectful relationships, student care and a positive learning experience.</p>
+      </article>
+    </section>
+
+    <section class="band">
+      <p class="eyebrow">Our approach</p>
+      <h2>Learning goes beyond the classroom</h2>
+      <p>Facilities are most valuable when students use them to ask questions, practise skills, work together and develop confidence.</p>
+    </section>
+
+    <section class="band">
+      <h2>Interested in joining our school community?</h2>
+      <p>Visit the admissions page to explore the application process and the information families may need.</p>
+      <a class="button" href="admissions.html">Explore Admissions ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <strong>EAK International School</strong>
+    <p>Learning today. Leading tomorrow.</p>
+    <a href="index.html">Home</a> ·
+    <a href="about.html">About</a> ·
+    <a href="academics.html">Academics</a> ·
+    <a href="admissions.html">Admissions</a>
+    <p><small>Campus facilities should be verified before publication.</small></p>
+  </footer>
+</body>
+</html>
